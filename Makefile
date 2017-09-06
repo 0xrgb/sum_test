@@ -1,7 +1,7 @@
 all: sum_test
 
 sum_test: sum.o main.o
-	g++ -o sum_test main.o sum.o
+	gcc -o sum_test main.o sum.o
 	
 sum.o: sum.h sum.c
 	gcc -c -o sum.o sum.c
